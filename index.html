@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>El huésped de Drácula y otros relatos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background: linear-gradient(-45deg, #2c0000, #121212, #2c0000, #121212);
+      background-size: 400% 400%;
+      animation: gradientAnimation 15s ease infinite;
+      color: #f1f1f1;
+      font-family: 'Georgia', serif;
+      padding-bottom: 50px;
+    }
+    @keyframes gradientAnimation {
+      0% {background-position:0% 50%;}
+      50% {background-position:100% 50%;}
+      100% {background-position:0% 50%;}
+    }
+    .navbar {
+      margin-bottom: 30px;
+    }
+    .hero-img {
+      max-width: 100%;
+      height: auto;
+      border: 5px solid #343a40;
+      border-radius: 15px;
+      box-shadow: 0 0 15px #800000cc;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .btn-group-custom a {
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-danger">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">El huésped de Drácula</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavIndex">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavIndex">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="identificacion general.html">Identificación</a></li>
+        <li class="nav-item"><a class="nav-link" href="resumenes.html">Resumen</a></li>
+        <li class="nav-item"><a class="nav-link" href="analisis.html">Análisis Literario</a></li>
+        <li class="nav-item"><a class="nav-link" href="interpretacion y opinion personal.html">Opinión Personal</a></li>
+        <li class="nav-item"><a class="nav-link" href="multimedia.html">Recursos Multimedia</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<img src="bram stoker.jpg" alt="Bram Stoker" class="hero-img mb-4" />
+<h1 class="text-center mb-3">Bienvenidos al mundo oscuro de Bram Stoker</h1>
+<p class="lead text-center">Explora el análisis completo de la obra <strong>"El huésped de Drácula y otros relatos"</strong> a través de nuestras páginas interactivas y estéticas de horror clásico.</p>
+
+<div class="d-flex justify-content-center flex-wrap btn-group-custom">
+  <a href="identificacion general.html" class="btn btn-outline-primary m-1">Identificación</a>
+  <a href="resumenes.html" class="btn btn-outline-success m-1">Resumen</a>
+  <a href="analisis.html" class="btn btn-outline-warning m-1">Análisis Literario</a>
+  <a href="interpretacion y opinion personal.html" class="btn btn-outline-info m-1">Opinión Personal</a>
+  <a href="multimedia.html" class="btn btn-outline-danger m-1">Recursos Multimedia</a>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

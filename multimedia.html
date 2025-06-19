@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>El huésped de Drácula y otros relatos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #121212;
+      color: #f1f1f1;
+      font-family: 'Georgia', serif;
+      padding-top: 70px;
+    }
+    .navbar {
+      background-color: #000;
+      border-bottom: 3px solid #990000;
+    }
+    .navbar-brand {
+      font-weight: bold;
+      color: #ff4444 !important;
+      text-shadow: 0 0 6px #ff4444;
+    }
+    .nav-link {
+      color: #f1f1f1;
+      transition: color 0.3s ease;
+    }
+    .nav-link:hover {
+      color: #ff4444;
+      text-shadow: 0 0 6px #ff4444;
+    }
+    .nav-link.active {
+      color: #ff4444 !important;
+      text-shadow: 0 0 6px #ff4444;
+      font-weight: 600;
+    }
+    .hero-img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      border: 5px solid #343a40;
+      border-radius: 15px;
+      box-shadow: 0 0 15px #ff0000aa;
+      margin-bottom: 30px;
+    }
+    .page-section {
+      padding: 30px 15px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* Contenedor para videos con responsividad */
+    .contenedor {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 50px;
+    }
+    .contenedor iframe, .contenedor img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #990000cc;
+      transition: transform 0.3s ease;
+    }
+    .contenedor iframe:hover, .contenedor img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #ff4444cc;
+    }
+
+    /* Imágenes con tamaño fijo pero responsivas */
+    .contenedor img {
+      width: 350px;
+      height: 320px;
+      object-fit: cover;
+      border: 2px solid #555;
+    }
+
+    /* Botones */
+    .btn-outline-primary, .btn-outline-success, .btn-outline-warning, .btn-outline-info, .btn-outline-danger {
+      color: #f1f1f1;
+      border-color: #f1f1f1;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .btn-outline-primary:hover {
+      background-color: #0d6efd;
+      border-color: #0d6efd;
+      color: #fff;
+    }
+    .btn-outline-success:hover {
+      background-color: #198754;
+      border-color: #198754;
+      color: #fff;
+    }
+    .btn-outline-warning:hover {
+      background-color: #ffc107;
+      border-color: #ffc107;
+      color: #121212;
+    }
+    .btn-outline-info:hover {
+      background-color: #0dcaf0;
+      border-color: #0dcaf0;
+      color: #121212;
+    }
+    .btn-outline-danger:hover {
+      background-color: #dc3545;
+      border-color: #dc3545;
+      color: #fff;
+    }
+    .btn-outline-danger.active,
+    .btn-outline-success.active,
+    .btn-outline-warning.active,
+    .btn-outline-info.active,
+    .btn-outline-primary.active {
+      background-color: currentColor !important;
+      color: #121212 !important;
+      box-shadow: 0 0 8px #ff4444;
+    }
+
+    .footer-text {
+      font-size: 0.9rem;
+      color: #bbb;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    /* Media queries para responsividad */
+    @media (max-width: 768px) {
+      .contenedor {
+        gap: 20px;
+      }
+      .contenedor img {
+        width: 100%;
+        height: auto;
+      }
+      .contenedor iframe {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">El huésped de Drácula</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavMain" aria-controls="navbarNavMain" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavMain">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="identificacion general.html">Identificación</a></li>
+        <li class="nav-item"><a class="nav-link" href="resumenes.html">Resumen</a></li>
+        <li class="nav-item"><a class="nav-link" href="analisis.html">Análisis Literario</a></li>
+        <li class="nav-item"><a class="nav-link" href="interpretacion y opinion personal.html">Opinión Personal</a></li>
+        <li class="nav-item"><a class="nav-link" href="multimedia.html">Recursos Multimedia</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container page-section text-center">
+  <h1 class="mb-3">Un par de videos para más información</h1>
+  <div class="contenedor">
+    <iframe src="https://www.youtube.com/embed/I4u5mpciLvE?si=ION1uXkcGLxIfInD" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/8hnuD70e2_Y?si=LxW1GBOnXPo7tTDb" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <hr class="my-4" />
+  <h4>Imágenes</h4>
+  <div class="contenedor">
+    <img src="dracula 1.jpeg" alt="Imagen Drácula 1" />
+    <img src="dracula 2.jpeg" alt="Imagen Drácula 2" />
+  </div>
+
+  <div class="d-grid gap-2 d-md-flex justify-content-center mt-4 flex-wrap">
+    <a href="identificacion general.html" class="btn btn-outline-primary">Identificación</a>
+    <a href="resumenes.html" class="btn btn-outline-success">Resumen</a>
+    <a href="analisis.html" class="btn btn-outline-warning">Análisis Literario</a>
+    <a href="interpretacion y opinion personal.html" class="btn btn-outline-info">Opinión Personal</a>
+    <a href="multimedia.html" class="btn btn-outline-danger">Recursos Multimedia</a>
+  </div>
+
+  <p class="footer-text mt-5">© 2025 El huésped de Drácula y otros relatos</p>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Activador de enlaces activos -->
+<script>
+  const path = window.location.pathname.split("/").pop();
+
+  document.querySelectorAll('a[href]').forEach(link => {
+    const href = link.getAttribute('href');
+    if (href === path) {
+      link.classList.add('active');
+    }
+  });
+</script>
+
+</body>
+</html>
+
+
+

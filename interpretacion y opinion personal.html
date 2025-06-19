@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Interpretación y Opinión Personal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      color: #fff;
+      font-family: 'Georgia', serif;
+      padding: 80px 20px 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      position: relative;
+      overflow-x: hidden;
+      background: linear-gradient(-45deg, #2c0000, #121212, #2c0000, #121212);
+      background-size: 400% 400%;
+      animation: gradientAnimation 15s ease infinite;
+    }
+
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    h1, h2 {
+      color: #ff4444;
+      margin-bottom: 1rem;
+      text-shadow: 0 0 6px #ff4444;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    .btn-back {
+      margin-top: 30px;
+      display: block;
+    }
+
+    /* Navbar */
+    .navbar-dark .navbar-nav .nav-link {
+      color: #fff;
+    }
+    .navbar-dark .navbar-nav .nav-link.active {
+      color: #ff4444 !important;
+      text-shadow: 0 0 6px #ff4444;
+    }
+
+    /* Murciélagos decorativos agrandados y responsive */
+    .bat {
+      position: fixed;
+      width: 100px;
+      max-width: 25vw; /* Responsive max width */
+      height: 100px;
+      background: url('https://c0.klipartz.com/pngpicture/764/82/gratis-png-ilustracion-de-murcielagos-murcielago-halloween-murcielago-thumbnail.png') no-repeat center/contain;
+      mix-blend-mode: multiply;
+      opacity: 0.7;
+      animation-timing-function: linear;
+      pointer-events: none;
+      z-index: 10;
+    }
+    .bat:nth-child(1) {
+      top: 20%;
+      left: -110px;
+      animation: flyBat 15s linear infinite;
+      animation-delay: 0s;
+    }
+    .bat:nth-child(2) {
+      top: 50%;
+      left: -120px;
+      animation: flyBat 12s linear infinite;
+      animation-delay: 5s;
+    }
+    .bat:nth-child(3) {
+      top: 75%;
+      left: -90px;
+      animation: flyBat 18s linear infinite;
+      animation-delay: 9s;
+    }
+
+    @keyframes flyBat {
+      0% {
+        transform: translateX(0) translateY(0) rotate(0deg);
+        opacity: 0.7;
+      }
+      50% {
+        transform: translateX(110vw) translateY(20px) rotate(15deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateX(220vw) translateY(0) rotate(0deg);
+        opacity: 0.7;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-danger fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">El huésped de Drácula</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavOpinion">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavOpinion">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="identificacion general.html">Identificación</a></li>
+          <li class="nav-item"><a class="nav-link" href="resumenes.html">Resumen</a></li>
+          <li class="nav-item"><a class="nav-link" href="analisis.html">Análisis Literario</a></li>
+          <li class="nav-item"><a class="nav-link active" href="interpretacion y opinion personal.html">Opinión Personal</a></li>
+          <li class="nav-item"><a class="nav-link" href="multimedia.html">Recursos Multimedia</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Murciélagos animados -->
+  <div class="bat"></div>
+  <div class="bat"></div>
+  <div class="bat"></div>
+
+  <h1 class="text-center">Interpretación y Opinión Personal</h1>
+
+  <h2>Impacto de la obra</h2>
+  <p>
+    "El huésped de Drácula y otros relatos" tiene un profundo impacto en el género gótico y de terror clásico. Bram Stoker logra mantener viva la esencia del miedo atemporal, explorando temas universales como la mortalidad y la lucha entre el bien y el mal.
+  </p>
+
+  <h2>Enseñanzas</h2>
+  <p>
+    La obra nos invita a reflexionar sobre las consecuencias de ignorar advertencias y sobre la naturaleza dual del ser humano, atrapado entre la racionalidad y sus miedos más profundos.
+  </p>
+
+  <h2>Aspectos significativos</h2>
+  <p>
+    Destacan el manejo magistral del suspenso, el simbolismo cargado de significado, y la atmósfera oscura que envuelve cada relato, logrando que el lector se sumerja en un mundo inquietante y fascinante.
+  </p>
+
+  <h2>Reflexión crítica</h2>
+  <p>
+    Esta colección fomenta el pensamiento crítico al cuestionar la frontera entre realidad y superstición, así como el peso de las emociones reprimidas en la psique humana.
+  </p>
+
+  <a href="index.html" class="btn btn-outline-light btn-back">Volver al inicio</a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+

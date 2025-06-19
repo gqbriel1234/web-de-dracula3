@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Análisis Literario</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      color: #fff;
+      font-family: 'Georgia', serif;
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      position: relative;
+      overflow-x: hidden;
+      background: linear-gradient(-45deg, #1b0000, #121212, #1b0000, #121212);
+      background-size: 400% 400%;
+      animation: gradientAnimation 15s ease infinite;
+    }
+
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    h1, h2 {
+      color: #cc3333;
+      margin-bottom: 1rem;
+      text-shadow: 0 0 8px #cc3333;
+    }
+
+    p, li {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    .btn-back {
+      margin-top: 30px;
+      display: block;
+    }
+
+    /* Navegación */
+    .navbar-dark .navbar-nav .nav-link {
+      color: #fff;
+    }
+    .navbar-dark .navbar-nav .nav-link.active {
+      color: #cc3333;
+      font-weight: bold;
+      text-shadow: 0 0 8px #cc3333;
+    }
+
+    /* Murciélagos decorativos */
+    .bat {
+      position: fixed;
+      width: 100px;
+      max-width: 25vw; /* responsive width */
+      opacity: 0.12;
+      z-index: 0;
+      filter: drop-shadow(0 0 1px #330000);
+      user-select: none;
+      pointer-events: none;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+    .bat1 {
+      top: 10%; left: 5%; 
+      transform-origin: center center;
+      animation-name: batFloat1;
+      animation-duration: 8s;
+    }
+    .bat2 {
+      top: 50%; left: 80%; 
+      transform-origin: center center;
+      animation-name: batFloat2;
+      animation-duration: 6s;
+    }
+    .bat3 {
+      top: 70%; left: 15%; 
+      transform-origin: center center;
+      animation-name: batFloat3;
+      animation-duration: 7s;
+    }
+    .bat4 {
+      top: 25%; left: 70%; 
+      transform-origin: center center;
+      animation-name: batFloat4;
+      animation-duration: 9s;
+    }
+
+    @keyframes batFloat1 {
+      0% { transform: translate(0, 0) rotate(-20deg); }
+      50% { transform: translate(15px, -10px) rotate(-15deg); }
+      100% { transform: translate(0, 0) rotate(-20deg); }
+    }
+    @keyframes batFloat2 {
+      0% { transform: translate(0, 0) rotate(15deg); }
+      50% { transform: translate(-10px, 15px) rotate(20deg); }
+      100% { transform: translate(0, 0) rotate(15deg); }
+    }
+    @keyframes batFloat3 {
+      0% { transform: translate(0, 0) rotate(-10deg); }
+      50% { transform: translate(10px, 10px) rotate(-5deg); }
+      100% { transform: translate(0, 0) rotate(-10deg); }
+    }
+    @keyframes batFloat4 {
+      0% { transform: translate(0, 0) rotate(10deg); }
+      50% { transform: translate(-15px, -15px) rotate(5deg); }
+      100% { transform: translate(0, 0) rotate(10deg); }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-danger mb-4">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">El huésped de Drácula</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAnalisis" aria-controls="navbarNavAnalisis" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAnalisis">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="identificacion general.html">Identificación</a></li>
+        <li class="nav-item"><a class="nav-link" href="resumenes.html">Resumen</a></li>
+        <li class="nav-item"><a class="nav-link active" href="analisis.html">Análisis Literario</a></li>
+        <li class="nav-item"><a class="nav-link" href="interpretacion y opinion personal.html">Opinión Personal</a></li>
+        <li class="nav-item"><a class="nav-link" href="multimedia.html">Recursos Multimedia</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<h1 class="text-center">Análisis Literario</h1>
+
+<h2>Temas principales</h2>
+<p>Los relatos giran en torno al miedo, la muerte, lo sobrenatural, la represión emocional, la sexualidad velada, y el enfrentamiento entre ciencia y superstición.</p>
+
+<h2>Estilo narrativo</h2>
+<p>Predomina una narración en tercera persona con tono gótico, oscuro y detallado. Stoker utiliza descripciones atmosféricas para crear tensión y presagio.</p>
+
+<h2>Personajes</h2>
+<ul>
+  <li><strong>Jonathan Harker:</strong> Protagonista racional pero vulnerable.</li>
+  <li><strong>Conde Drácula:</strong> Enigmático, inmortal, símbolo del mal y del deseo reprimido.</li>
+  <li><strong>Otros:</strong> Figuras menores que refuerzan el ambiente misterioso o sirven como advertencia.</li>
+</ul>
+
+<h2>Espacios y tiempo</h2>
+<p>Transilvania, castillos, caminos nevados, cementerios: todos espacios que refuerzan lo gótico. El tiempo se sitúa entre finales del siglo XIX y principios del XX.</p>
+
+<h2>Recursos literarios</h2>
+<p>Metáforas, simbolismo (sangre, cruz, luna), ironía trágica y prefiguración son frecuentes. La atmósfera es esencial para envolver al lector en lo fantástico.</p>
+
+<a href="index.html" class="btn btn-outline-light btn-back">Volver al inicio</a>
+
+<!-- Murciélagos decorativos -->
+<img src="https://c0.klipartz.com/pngpicture/764/82/gratis-png-ilustracion-de-murcielagos-murcielago-halloween-murcielago-thumbnail.png" alt="Murciélago" class="bat bat1" />
+<img src="https://c0.klipartz.com/pngpicture/764/82/gratis-png-ilustracion-de-murcielagos-murcielago-halloween-murcielago-thumbnail.png" alt="Murciélago" class="bat bat2" />
+<img src="https://c0.klipartz.com/pngpicture/764/82/gratis-png-ilustracion-de-murcielagos-murcielago-halloween-murcielago-thumbnail.png" alt="Murciélago" class="bat bat3" />
+<img src="https://c0.klipartz.com/pngpicture/764/82/gratis-png-ilustracion-de-murcielagos-murcielago-halloween-murcielago-thumbnail.png" alt="Murciélago" class="bat bat4" />
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+
